@@ -8,6 +8,7 @@ function Weather() {
             <br/>
         <form>
             <input type = "text" name = "city" placeholder="city"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;
             <input type = "text" name = "country" placeholder="country"/>
             <button className="getweather">Submit</button>
         </form>
