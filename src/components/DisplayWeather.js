@@ -3,6 +3,8 @@ import "./displayweather.css";
 
 function DisplayWeather(props) {
     const {data} = props;
+    const iconurl = "https://openweathermap.org/img/wn/" + `${data.weather[0].icon}` +".png";
+
   return (
     <div className="displayweather">
         <div className = "maincard">
@@ -16,7 +18,8 @@ function DisplayWeather(props) {
                 {Math.floor(data.main.temp - 273.15)}
                 <sup>o</sup>
             </h1>
-            
+            <span className='weather-main'>{data.weather[0].main}</span>
+            <img src={iconurl} className="weather-icon"/>
         </div>
     </div>
   )

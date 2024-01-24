@@ -39,7 +39,6 @@ function Weather() {
         if(name == "country") {
             setForm({...form, country:value})
         }
-        console.log(form.city, form.country)
     }
     return (
         <div className = "weather">
